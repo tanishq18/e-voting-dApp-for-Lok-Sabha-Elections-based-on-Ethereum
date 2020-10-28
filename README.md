@@ -1,23 +1,23 @@
 # ethereum-based-e-voting-dapp
 
-Requirements:
-Node
-Ganache
+Requirements:<br>
+Node<br>
+Ganache<br>
 
-cd into the project folder
-//Start Ganache
+cd into the project folder<br>
+//Start Ganache<br>
 
-node
-Web3 = require('web3')
-web3 = new Web3("http://localhost:7545")
-web3.eth.getAccounts(console.log)
+node<br>
+Web3 = require('web3')<br>
+web3 = new Web3("http://localhost:7545")<br>
+web3.eth.getAccounts(console.log)<br>
 
-bytecode = fs.readFileSync('Voting_sol_Voting.bin').toString()
-abi = JSON.parse(fs.readFileSync('Voting_sol_Voting.abi').toString())
+bytecode = fs.readFileSync('Voting_sol_Voting.bin').toString()<br>
+abi = JSON.parse(fs.readFileSync('Voting_sol_Voting.abi').toString())<br>
 
-deployedContract = new web3.eth.Contract(abi)
+deployedContract = new web3.eth.Contract(abi)<br>
 
-listOfCandidates = ['BJP', 'Congress', 'NOTA']
+listOfCandidates = ['BJP', 'Congress', 'NOTA']<br>
 
   deployedContract.deploy({
   data: bytecode,
@@ -31,10 +31,10 @@ listOfCandidates = ['BJP', 'Congress', 'NOTA']
   console.log(newContractInstance.options.address)
 });
 
-//Insert the address of node in from:"Address"
-//Insert this contract address in js/index.js
+//Insert the address of node in from:"Address"<br>
+//Insert this contract address in js/index.js<br>
 
-Test:
-deployedContract.methods.voteForCandidate(web3.utils.asciiToHex('BJP')).send({from:'0x8748a7f8585f658Aa1f65004BB965BB1999ce956'}).then((f) => console.log(f))
-//Insert the address of node in from:"Address"
+Test:<br>
+deployedContract.methods.voteForCandidate(web3.utils.asciiToHex('BJP')).send({from:'0x8748a7f8585f658Aa1f65004BB965BB1999ce956'}).then((f) => console.log(f))<br>
+//Insert the address of node in from:"Address"<br>
 //Check results
