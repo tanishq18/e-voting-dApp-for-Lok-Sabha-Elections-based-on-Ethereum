@@ -1,4 +1,4 @@
-# ethereum-based-e-voting-dapp
+# e-voting-dApp-for-Lok-Sabha-Elections-based-on-Ethereum
 
 Requirements:<br>
 Node<br>
