@@ -4,6 +4,7 @@ Requirements:<br>
 Node<br>
 Ganache<br>
 
+Installation:<br>
 cd into the project folder<br>
 //Start Ganache<br>
 
