@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Elections 2020</title>
+ <link href='https://fonts.googleapis.com/css?family=Open Sans:400,700' rel='stylesheet' type='text/css'>
+ <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+ <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+ <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+ <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+ <link rel="stylesheet" type="text/css" href="css/util.css">
+ <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <div class="limiter">
+		<div class="container-login100">
+            <h1>ONLINE LOK SABHA ELECTIONS 2020</h1>
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="images/img-01.png" alt="IMG">
+                </div>
+                <div class="login100-form">
+                    <div class="wrap-input100">
+                        <table class="table table-bordered">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Candidate</th>
+                                    <th scope="col">Votes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>BJP</b></td>
+                                    <td id="candidate-1"></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Congress</b></td>
+                                    <td id="candidate-2"></td>
+                                </tr>
+                                <tr>
+                                    <td><b>NOTA</b></td>
+                                    <td id="candidate-3"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="wrap-input100">
+                        <input type="text" id="candidate" class="input100">
+				        <div class="container-login100-form-btn" id='hide-div'>
+					        <a href="#" onclick="voteForCandidate()" class="login100-form-btn">
+						       VOTE
+                            </a>
+				        </div>
+                    </div>
+                    <div class="text-center p-t-12">
+						<span class="txt1">
+							Done?  
+						</span>
+						<a class="txt2" href="login.html">
+							Log Out
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</a>
+					</div>
+                </div>
+			</div>
+		</div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.37/dist/web3.min.js"></script>
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/select2/select2.min.js"></script>
+<script src="vendor/tilt/tilt.jquery.min.js"></script>
+<script >
+    $('.js-tilt').tilt({
+        scale: 1.1
+    })
+</script>
+<script src="js/main.js"></script>
+<script src="js/index.js"></script>
+</html>
