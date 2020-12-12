@@ -38,4 +38,6 @@ listOfCandidates = ['BJP', 'Congress', 'NOTA']<br>
 Test:<br>
 deployedContract.methods.voteForCandidate(web3.utils.asciiToHex('BJP')).send({from:'0x8748a7f8585f658Aa1f65004BB965BB1999ce956'}).then((f) => console.log(f))<br>
 //Insert the address of node in from:"Address"<br>
-//Check results
+//Check results<br>
+
+Project Report: https://bit.ly/ProjectReportsOfTanishqWadhwani
