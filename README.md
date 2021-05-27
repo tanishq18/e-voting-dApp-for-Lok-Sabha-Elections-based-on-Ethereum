@@ -1,5 +1,10 @@
 # e-voting-dApp-for-Lok-Sabha-Elections-based-on-Ethereum
 
+Update:<br>
+node setup.js<br>
+Insert this contract address in js/index.js<br>
+
+Old:<br>
 Requirements:<br>
 Node<br>
 Ganache<br>
