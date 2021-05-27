@@ -12,7 +12,7 @@ abi = JSON.parse(fs.readFileSync('Voting_sol_Voting.abi').toString());
 
 deployedContract = new web3.eth.Contract(abi);
 
-listOfCandidates = ['BJP', 'NCP', 'NOTA'];
+listOfCandidates = ['BJP', 'Congress', 'NOTA'];
 
 web3.eth.getAccounts().then((f) => {
     for (const property in f) {
