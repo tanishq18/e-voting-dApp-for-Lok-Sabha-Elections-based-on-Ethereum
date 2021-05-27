@@ -24,8 +24,8 @@ web3.eth.getAccounts().then((f) => {
         arguments: [listOfCandidates.map(name => web3.utils.asciiToHex(name))]
         }).send({
         from: account,
-        gas: 100000,
-        gasPrice: web3.utils.toWei('0.00001', 'ether')
+        gas: 1500000,
+        gasPrice: web3.utils.toWei('0.00003', 'ether')
         }).then((newContractInstance) => {
         deployedContract.options.address = newContractInstance.options.address;
         console.log(newContractInstance.options.address);
