@@ -12,7 +12,7 @@ abi = JSON.parse(fs.readFileSync('Voting_sol_Voting.abi').toString());
 
 deployedContract = new web3.eth.Contract(abi);
 
-listOfCandidates = ['BJP', 'NCP', 'AAP'];
+listOfCandidates = ['BJP', 'NCP', 'NOTA'];
 
 web3.eth.getAccounts().then((f) => {
     for (const property in f) {
@@ -24,8 +24,8 @@ web3.eth.getAccounts().then((f) => {
         arguments: [listOfCandidates.map(name => web3.utils.asciiToHex(name))]
         }).send({
         from: account,
-        gas: 1000000,
-        gasPrice: web3.utils.toWei('0.00005', 'ether')
+        gas: 100000,
+        gasPrice: web3.utils.toWei('0.00001', 'ether')
         }).then((newContractInstance) => {
         deployedContract.options.address = newContractInstance.options.address;
         console.log(newContractInstance.options.address);
